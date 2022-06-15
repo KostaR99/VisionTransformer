@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 
-from attention import Attention
+from attention import Attention, AttentionSeparateQKV
 from mlp import MLP
 
 
@@ -16,7 +16,7 @@ class TransformerBlock(nn.Module):
         attn_p: float = 0.
     ):
         super().__init__()
-        self.attention = Attention(
+        self.attention = AttentionSeparateQKV(
             dim=dim,
             n_heads=n_heads,
             qkv_bias=qkv_bias,
