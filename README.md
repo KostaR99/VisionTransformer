@@ -3,7 +3,7 @@
 <img src="https://miro.medium.com/max/1400/1*l37va2Mu8Snx6LLb13430A.png" width = "900px" height = "520px">
 
 Vision transformer is a neural network architecture that is used for Computer Vision tasks such as classification, segmentation, object detection.
-In comparison to CNN Neural Networks, transformers do not have any Convolutional blocks (if we do not take patch embeding into account).
+In comparison to CNN Neural Networks, transformers do not have any Convolutional blocks (if we do not take patch embedding into account).
 
 ViT adapted  this architecture for original transformers that were used for language tasks (sentiment analysis, text prediction, summarization...)
 The first time Transformers were mentioned was in the <a href="https://arxiv.org/pdf/1706.03762.pdf">"Attention is all you need" paper</a>
