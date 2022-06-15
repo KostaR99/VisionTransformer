@@ -16,7 +16,7 @@ class TransformerBlock(nn.Module):
         attn_p: float = 0.
     ):
         super().__init__()
-        self.attention = AttentionSeparateQKV(
+        self.attention = Attention(
             dim=dim,
             n_heads=n_heads,
             qkv_bias=qkv_bias,

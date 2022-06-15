@@ -76,5 +76,7 @@ class AttentionSeparateQKV(nn.Module):
 
 if __name__ == "__main__":
     x = torch.randn((1, 16, 768))
-    attention = AttentionSeparateQKV(dim=768)
-    assert attention(x).shape == x.shape
+    attention = Attention(dim = 768)
+    attention_separate = AttentionSeparateQKV(dim=768)
+
+    assert attention(x).shape == x.shape and attention_separate(x).shape == x.shape
